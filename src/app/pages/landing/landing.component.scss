@@ -2,4 +2,21 @@
 
 main {
   @extend .container;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  app-profile {
+    flex: 1;
+  }
+
+  app-project-stream {
+    flex: 3;
+  }
+
+  @media (max-width: 768px) {
+    app-profile, app-project-stream {
+      flex-basis: 768px;
+    }
+  }
 }

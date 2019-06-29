@@ -1,0 +1,39 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+:host {
+  background-color: #f9f9f9;
+  box-shadow: 0 0 1px black;
+  margin-top: 16px;
+  padding: 8px 8px 16px;
+}
+
+img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 2em;
+  font-family: "Times New Roman", serif;
+  width: 100%;
+}
+
+.about {
+  display: grid;
+  grid-template: auto / 1fr 2fr;
+  grid-gap: 8px 4px;
+}
+
+.labels {
+  font-size: 1.5rem;
+
+  display: grid;
+  grid-template: auto / 1fr 1fr 1fr;
+  grid-gap: 4px;
+  text-align: center;
+
+  i:hover {
+    color: #311b92;
+  }
+}

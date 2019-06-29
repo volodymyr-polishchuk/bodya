@@ -10,6 +10,8 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { GlyphiconComponent } from './shared/glyphicon/glyphicon.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { ProjectStreamComponent } from './pages/project-stream/project-stream.component';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { GlyphiconComponent } from './shared/glyphicon/glyphicon.component';
     LandingComponent,
     NavbarComponent,
     GlyphiconComponent,
+    ProfileComponent,
+    ProjectStreamComponent,
   ],
   imports: [
     BrowserModule,
