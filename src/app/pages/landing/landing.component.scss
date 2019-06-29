@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
-
+@import "~bootstrap/scss/forms";
 main {
   @extend .container;
 
@@ -19,5 +19,19 @@ main {
     app-profile, app-project-stream {
       flex-basis: 768px;
     }
+  }
+}
+
+form {
+  > div {
+    @extend .form-group;
+  }
+
+  input {
+    @extend .form-control;
+  }
+
+  textarea {
+    @extend .form-control;
   }
 }
