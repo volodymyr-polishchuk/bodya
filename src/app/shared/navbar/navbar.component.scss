@@ -1,0 +1,109 @@
+@import "~bootstrap/scss/bootstrap";
+
+.empty-space {
+  height: 62px;
+}
+
+.nav-wrapper {
+  position: fixed;
+  z-index: 100;
+  width: 100vw;
+  box-shadow: 0 8px 6px 0 #00000029;
+}
+
+nav {
+  @extend .container;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .for-sm {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    font-size: 2em;
+    position: relative;
+
+    span {
+      cursor: pointer;
+    }
+  }
+
+  div.dropdown {
+    position: absolute;
+    top: 61px;
+    background-color: white;
+    left: 0;
+    right: 0;
+    box-shadow: 0 8px 6px 0 #00000029;
+    padding-bottom: 16px;
+
+    @extend .container;
+
+    .menu-item {
+      display: flex;
+      flex-direction: column;
+      padding: 8px;
+      align-items: center;
+    }
+  }
+
+  .for-md {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .for-md {
+      display: block;
+    }
+    .for-sm {
+      display: none;
+    }
+    div.dropdown {
+      display: none;
+    }
+  }
+}
+
+i.logo {
+  min-height: 45px;
+  min-width: 45px;
+  background: linear-gradient(45deg, #9575cd, #7e57c2, #673ab7, #5e35b1, #512da8, #4527a0, #311b92);
+  background-size: 1000%;
+  border-radius: 50%;
+  animation: logo 5s infinite ease-in-out;
+  margin: 8px 8px 8px 0;
+
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 18px;
+  font-family: pt_serif, serif;
+  justify-content: center;
+  align-items: center;
+}
+
+a.menu-item {
+  color: #383838;
+  font-family: sans-serif;
+  padding: 24px 36px;
+  text-decoration: none;
+
+  &:hover {
+    color: black;
+  }
+}
+
+@keyframes logo {
+  from {
+    background-position: 91% 0;
+  }
+
+  50% {
+    background-position: 10% 100%;
+  }
+
+  to {
+    background-position: 91% 0;
+  }
+}

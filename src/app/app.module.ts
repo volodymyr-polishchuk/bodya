@@ -8,12 +8,16 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { GlyphiconComponent } from './shared/glyphicon/glyphicon.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+    NavbarComponent,
+    GlyphiconComponent,
   ],
   imports: [
     BrowserModule,

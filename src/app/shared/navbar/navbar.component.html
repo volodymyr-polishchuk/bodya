@@ -1,0 +1,28 @@
+<div class="nav-wrapper">
+  <nav>
+    <a href="mailto:gmastrbit@gmail.com">
+      <i class="logo">
+        G
+      </i>
+    </a>
+    <section class="for-md">
+      <a class="menu-item "
+         [attr.href]="item.url"
+         *ngFor="let item of menu">
+        {{ item.title }}
+      </a>
+    </section>
+    <section class="for-sm">
+      <app-glyphicon [name]="collapse ? 'menu-hamburger' : 'remove'"
+                     (click)="collapse = !collapse"></app-glyphicon>
+    </section>
+    <div [class.d-none]="collapse" class="dropdown">
+      <a class="menu-item "
+         [attr.href]="item.url"
+         *ngFor="let item of menu">
+        {{ item.title }}
+      </a>
+    </div>
+  </nav>
+</div>
+<div class="empty-space"></div>
