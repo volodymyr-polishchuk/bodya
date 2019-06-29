@@ -11,6 +11,16 @@
          *ngFor="let item of menu">
         {{ item.title }}
       </a>
+      <a [popover]="language_list" [outsideClick]="true">
+        Мова
+      </a>
+      <ng-template #language_list>
+        <div class="language-list">
+          <ul>
+            <li *ngFor="let language of languages" (click)="setLang(language.code)">{{ language.name }}</li>
+          </ul>
+        </div>
+      </ng-template>
     </section>
     <section class="for-sm">
       <app-glyphicon [name]="collapse ? 'menu-hamburger' : 'remove'"
@@ -21,6 +31,9 @@
          [attr.href]="item.url"
          *ngFor="let item of menu">
         {{ item.title }}
+      </a>
+      <a [popover]="language_list" [outsideClick]="true">
+        Мова
       </a>
     </div>
   </nav>

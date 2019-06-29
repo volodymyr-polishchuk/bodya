@@ -1,14 +1,14 @@
 <img src="../../../assets/images/profile-image-2.jpeg" alt="profile photo">
 <h4>
-  Богдан Щербаков
+  {{ 'name' | translate }}
 </h4>
 <a id="contacts"></a>
 <article class="about">
   <span>
-    Вік:
+    {{ 'years' | translate }}
   </span>
   <span>
-    20 років
+    {{ 'numberYearsOld' | translate : { years: 20 } }}
   </span>
 
   <span>
