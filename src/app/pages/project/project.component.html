@@ -1,0 +1,11 @@
+<img [attr.src]="project.image" [attr.alt]="project.name">
+<h4>{{ project.name }}</h4>
+<article>
+  {{ project.description }}
+</article>
+<div class="actions">
+  <a [attr.href]="project.url">
+    Перейти
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</div>

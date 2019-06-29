@@ -12,6 +12,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { GlyphiconComponent } from './shared/glyphicon/glyphicon.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ProjectStreamComponent } from './pages/project-stream/project-stream.component';
+import { ProjectComponent } from './pages/project/project.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { ProjectStreamComponent } from './pages/project-stream/project-stream.co
     GlyphiconComponent,
     ProfileComponent,
     ProjectStreamComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,
